@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('eyes.jpeg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-1 {
+    background: transparent;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(8px);
+    
+    
+
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 10px;
+}
+
+#cut {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-image: url('girlabs.jpeg');
+    background-size: cover;
+    border: 2px solid silver;
+}
+
+#maintain {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-image: url('maintain-guy.jpeg');
+    background-size:cover;
+    border: 2px solid silver;
+    margin-top: 5px;
+}
+
+#bulk {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-image: url('bulk.jpeg');
+    background-size: cover;
+    border: 2px solid silver;
+    margin-top: 5px;
+}
+
+#jacked {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-image: url(face.jpg);
+    background-size: cover;
+    border: 2px solid silver;
+    margin-top: 5px;
+    
+}
+
+.submit-button {
+    background-color:lawngreen;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 25vh;
+    font-family: "Audiowide";
+    margin-top: 10px;
+    margin-left: 55px;
+
+    
+}
+
+.submit-button:hover{
+    background-color: #646e79;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: lawngreen;
+    font-family:"Audiowide";
+    border-right: 10px solid;
+    border-left: 10px solid;
+} 
+
+h1 {
+    text-align: left;
+    font-size: 20px;
+    color: red;
+    font-family:"Audiowide";
+
+}

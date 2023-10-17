@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('main-background.jpeg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: transparent;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    
+     
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: rgb(74, 98, 117);
+    font-family: "Audiowide";
+}
+
+label {
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+    
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    color: lawngreen;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: larger;
+    background: transparent;
+    border-radius: 40px;
+    font-family: "Audiowide";
+    
+  
+}
+
+input[type="submit"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 25vh;
+    font-family: "Audiowide";
+    margin-left: 54px;
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+
+input[type="submit"]:hover {
+    background-color: #646e79;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    font-family:"Audiowide";
+    border-right: 5px solid;
+    border-left: 5px solid;
+} 
