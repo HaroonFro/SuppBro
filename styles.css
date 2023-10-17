@@ -20,7 +20,12 @@ body {
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     
+    
      
+}
+
+#button-container {
+    margin: auto;
 }
 
 .form-group {
@@ -37,7 +42,7 @@ label {
 }
 
 input[type="text"], input[type="number"] {
-    width: 100%;
+    width: 94%;
     color: lawngreen;
     padding: 10px;
     border: 1px solid #ccc;
@@ -58,7 +63,7 @@ input[type="submit"] {
     cursor: pointer;
     width: 25vh;
     font-family: "Audiowide";
-    margin-left: 54px;
+    margin-left: 65px;
     margin-top: 20px;
     margin-bottom: 10px;  
 }
