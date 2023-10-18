@@ -5,7 +5,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 
 const main = async () => {
-    const multiProducts = [
+    const multiSupps = [
         {
             brand: 'JYM',
             product: 'vita jym',
@@ -80,7 +80,7 @@ const main = async () => {
         }
     ]
 
-    const createdMulti = await multi.iinsertMany(multiProducts)
+    const createdMulti = await multi.iinsertMany(multiSupps)
     console.log('created multi', createdMulti)
 }
 
