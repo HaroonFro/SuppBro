@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const baseballSchema = require('./baseball')
-const basketballSchema = require('./basketball')
-const footballSchema = require('./football')
-const hockeySchema = require('./hockey')
+const proteinSchema = require('./protein')
+const creatineSchema = require('./creatine')
+const multiSchema = require('./multi')
+const stimSchema = require('./stim')
 
 const protein = mongoose.model('Protein', proteinSchema)
 const creatine = mongoose.model('Creatine', creatineSchema)
