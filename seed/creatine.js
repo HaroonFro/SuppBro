@@ -4,7 +4,7 @@ const { creatine } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const creatineProducts =[
+    const creatineSupps =[
         {
             brand: 'amp',
             product: 'creatine hcl 180',
@@ -79,8 +79,8 @@ const main = async () => {
         }
     ]
 
-    const createdCreatine = await creatine.insertMany(creatineProducts)
-    console.log('created creatine', creatineProducts)
+    const createdCreatine = await creatine.insertMany(creatineSupps)
+    console.log('created creatine', createdCreatine)
 }
 
 const run = async () => {
