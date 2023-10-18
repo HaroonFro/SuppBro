@@ -4,7 +4,7 @@ const { stim } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const stimProducts = [
+    const stimSupps = [
         {
             brand: 'bucked up',
             product: 'mother bucker',
@@ -79,7 +79,7 @@ const main = async () => {
         }
     ]
 
-    const createdStim = await stim.insertMany(stimProducts)
+    const createdStim = await stim.insertMany(stimSupps)
     console.log('created stim', createdStim)
 }
 
