@@ -4,7 +4,7 @@ const { protein } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const proteinProducts = [
+    const proteinSupps = [
         {
             brand: 'amp',
             product: 'wheybolic-rippped',
@@ -78,7 +78,7 @@ const main = async () => {
             image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw2f00511c/hi-res/GHOST_2023_Updates/527910_GHOST_Whey_Protein_Milk_Chocolate_Front_2023.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
         }
     ]
-    const createdProtein = await protein.insertMany(proteinProducts)
+    const createdProtein = await protein.insertMany(proteinSupps)
     console.log('created protein', createdProtein)
 }
 const run = async () => {
