@@ -1,5 +1,5 @@
 const db = require('../db')
-const { creatine } = require('../models')
+const { Creatine } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -79,8 +79,8 @@ const main = async () => {
         }
     ]
 
-    const createdCreatine = await creatine.insertMany(creatineSupps)
-    console.log('created creatine', createdCreatine)
+    await Creatine.insertMany(creatineSupps)
+    console.log('created creatine')
 }
 
 const run = async () => {

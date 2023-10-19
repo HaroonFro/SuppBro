@@ -15,61 +15,61 @@ const main = async () => {
                 brand: 'amp',
                 product: 'wheybolic-rippped',
                 protein: 25,
-                Image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe12f9f91/hi-res/Price_Drop_Images_Banner/023457_GNC_AMP_Wheybolic_Ripped_Classic_Vanilla_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
+                image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe12f9f91/hi-res/Price_Drop_Images_Banner/023457_GNC_AMP_Wheybolic_Ripped_Classic_Vanilla_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
             },
             {
                 brand: 'amp',
                 product: 'wheybolic-alpha',
                 protein: 25,
-                Image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw32003160/hi-res/Price_Drop_Images_Banner/034573_GNC_AMP_Wheybolic_Alpha_Chocolate_Fudge_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
+                image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw32003160/hi-res/Price_Drop_Images_Banner/034573_GNC_AMP_Wheybolic_Alpha_Chocolate_Fudge_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
             },
             {
                 brand: 'amp',
                 product: 'wheybolic',
                 protein: 25,
-                Image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwc319bb1c/hi-res/Price_Drop_Images_Banner/012345_GNC_AMP_Wheybolic_Chocolate_Fudge_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
+                image: 'https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwc319bb1c/hi-res/Price_Drop_Images_Banner/012345_GNC_AMP_Wheybolic_Chocolate_Fudge_Tub_PriceDrop.jpg?sw=1500&sh=1500&sm=fit'
             },
             {
                 brand: 'glaxon',
                 product: 'protos-cookies',
                 protein: 30,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwdbc7cee9/hi-res/2023_10_09_Price_Drop_Banner_Images/584671_GLAXON_Protos_Whey_CookiesNMilk_Front_PriceDrop.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'  
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwdbc7cee9/hi-res/2023_10_09_Price_Drop_Banner_Images/584671_GLAXON_Protos_Whey_CookiesNMilk_Front_PriceDrop.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'  
             },
             {
                 brand: 'glaxon',
                 product: 'protos-strwbry',
                 protein: 30,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw82c6b9bb/hi-res/2023_10_09_Price_Drop_Banner_Images/584672_GLAXON_Protos_Whey_StrawberryMilk_Front_PriceDrop.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw82c6b9bb/hi-res/2023_10_09_Price_Drop_Banner_Images/584672_GLAXON_Protos_Whey_StrawberryMilk_Front_PriceDrop.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'glaxon',
                 product: 'protos-isolate',
                 protein: 30,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw00db10c4/hi-res/GNC-64624/584732_Glaxon_Protos_Isolate_Salted_Caramel_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw00db10c4/hi-res/GNC-64624/584732_Glaxon_Protos_Isolate_Salted_Caramel_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'optimum nutrition',
                 product: 'gold standard-chocolate',
                 protein: 25,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw95d7deeb/hi-res/350258_web_Optimum%20Nutrition%20GSW_5LB_ExtMilkChocolate_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw95d7deeb/hi-res/350258_web_Optimum%20Nutrition%20GSW_5LB_ExtMilkChocolate_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'optimum nutrition',
                 product: 'gold standard-dblchlte',
                 protein: 25,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw325553b7/hi-res/350281_web_Optimum%20Nutrition%20GSW_5LB_DRChocolate_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw325553b7/hi-res/350281_web_Optimum%20Nutrition%20GSW_5LB_DRChocolate_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'optimum nutrition',
                 product: 'gold standard-strwbry',
                 protein: 25,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwec2ed56e/hi-res/350328_web_Optimum%20Nutrition%20GSW_5LB_StrawberriesCream_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwec2ed56e/hi-res/350328_web_Optimum%20Nutrition%20GSW_5LB_StrawberriesCream_Front_.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'ghost',
                 product: 'whey-cereal milk',
                 protein: 30,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw5bae38f9/hi-res/GHOST_2023_Updates/527911_GHOST_Whey_Protein_Cereal_Milk_Front_2023.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw5bae38f9/hi-res/GHOST_2023_Updates/527911_GHOST_Whey_Protein_Cereal_Milk_Front_2023.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'ghost',
@@ -170,13 +170,13 @@ const main = async () => {
                 brand: 'bucked up',
                 product: 'mother bucker',
                 caffeine: 300,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw17b5305e/hi-res/2023_03_09/500836_BuckedUp_MotherBucker_Gym%20Junkie_Front.jpg?sw=480&sh=480&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw17b5305e/hi-res/2023_03_09/500836_BuckedUp_MotherBucker_Gym%20Junkie_Front.jpg?sw=480&sh=480&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'bucked up',
                 product: 'pre-workout bluraz',
                 caffeine: 300,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwea116c9c/hi-res/500408_1.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwea116c9c/hi-res/500408_1.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'bucked up',
@@ -188,7 +188,7 @@ const main = async () => {
                 brand: 'pro supps',
                 product: 'hyde-nightmare blood berry',
                 caffeine: 450,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe3e5b9fb/hi-res/494403_ProSupps%20HYDE%20Nightmare%20Pre-Workout_Blood%20Berry_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe3e5b9fb/hi-res/494403_ProSupps%20HYDE%20Nightmare%20Pre-Workout_Blood%20Berry_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'pro supps',
@@ -224,7 +224,7 @@ const main = async () => {
                 brand: 'ghost',
                 product: 'legend cherry limeade',
                 caffeine: 200,
-                Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwf0d30653/hi-res/528058_GHOST_LEGEND_All_Out_Cherry_Limeade_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+                image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwf0d30653/hi-res/528058_GHOST_LEGEND_All_Out_Cherry_Limeade_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
             },
             {
                 brand: 'ghost',

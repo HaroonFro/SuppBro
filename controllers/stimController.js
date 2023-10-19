@@ -1,11 +1,11 @@
-const { stim } = require('../models');
+const { Stim } = require('../models');
 
 
 
 
 async function getAllStim(req,res){
     try{
-        const stim = await stim.find();
+        const stim = await Stim.find();
         res.json(stim);
     }catch(error){
         res.status(500).json({error:error.message})
@@ -15,7 +15,7 @@ async function getAllStim(req,res){
 async function getStimById (req,res){
     try{
         const {id} = req.params;
-        const stim = await stim.findById(id);
+        const stim = await Stim.findById(id);
         if(stim){
             return res.json(stim);
         }
@@ -27,7 +27,7 @@ async function getStimById (req,res){
 
 async function createStim (req, res) {
     try {
-        const stim = await  stim.create(req.body)
+        const stim = await  Stim.create(req.body)
         await stim.save()
         return res.staus(201).json({
             stim,
@@ -40,7 +40,7 @@ async function createStim (req, res) {
 async function updateStim(req, res) {
     try {
         const { id } = req.params
-        let stim = await stim.findByIdAndUpdate(id)
+        let stim = await Stim.findByIdAndUpdate(id)
         if (stim) {
             return req.status(200).json(stim)
         }
@@ -53,7 +53,7 @@ async function updateStim(req, res) {
 async function deleteStim (req, res) {
     try {
         const id = req.params
-        let stim = await stim.findByIdAndDelete(id)
+        let stim = await Stim.findByIdAndDelete(id)
         if (stim) {
             return res.status(200).json(stim)
         }

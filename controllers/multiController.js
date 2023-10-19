@@ -1,11 +1,11 @@
-const { multi } = require('../models');
+const { Multi } = require('../models');
 
 
 
 
 async function getAllMulti(req,res){
     try{
-        const multi = await multi.find();
+        const multi = await Multi.find();
         res.json(multi);
     }catch(error){
         res.status(500).json({error:error.message})
@@ -15,7 +15,7 @@ async function getAllMulti(req,res){
 async function getMultiById (req,res){
     try{
         const {id} = req.params;
-        const multi = await multi.findById(id);
+        const multi = await Multi.findById(id);
         if(multi){
             return res.json(multi);
         }
@@ -27,7 +27,7 @@ async function getMultiById (req,res){
 
 async function createMulti (req, res) {
     try {
-        const multi = await  multi.create(req.body)
+        const multi = await  Multi.create(req.body)
         await multi.save()
         return res.staus(201).json({
             multi,
@@ -40,7 +40,7 @@ async function createMulti (req, res) {
 async function updateMulti (req, res) {
     try {
         const { id } = req.params
-        let multi = await multi.findByIdAndUpdate(id)
+        let multi = await Multi.findByIdAndUpdate(id)
         if (multi) {
             return req.status(200).json(multi)
         }
@@ -53,7 +53,7 @@ async function updateMulti (req, res) {
 async function deleteMulti (req, res) {
     try {
         const id = req.params
-        let multi = await multi.findByIdAndDelete(id)
+        let multi = await Multi.findByIdAndDelete(id)
         if (multi) {
             return res.status(200).json(multi)
         }

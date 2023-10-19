@@ -1,9 +1,9 @@
-const { creatine } = require('../models');
+const { Creatine } = require('../models');
 
 
 async function getAllCreatine(req,res){
     try{
-        const baseballs = await creatine.find();
+        const creatine = await Creatine.find();
         res.json(creatine);
     }catch(error){
         res.status(500).json({error:error.message})
@@ -13,7 +13,7 @@ async function getAllCreatine(req,res){
 async function getCreatineById (req,res){
     try{
         const {id} = req.params;
-        const creatine = await creatine.findById(id);
+        const creatine = await Creatine.findById(id);
         if(creatine){
             return res.json(creatine);
         }
@@ -25,7 +25,7 @@ async function getCreatineById (req,res){
 
 async function createCreatine (req, res) {
     try {
-        const creatine = await  creatine.create(req.body)
+        const creatine = await Creatine.create(req.body)
         await creatine.save()
         return res.staus(201).json({
             creatine,
@@ -38,7 +38,7 @@ async function createCreatine (req, res) {
 async function updateCreatine (req, res) {
     try {
         const { id } = req.params
-        let creatine = await creatine.findByIdAndUpdate(id)
+        let creatine = await Creatine.findByIdAndUpdate(id)
         if (creatine) {
             return req.status(200).json(creatine)
         }
@@ -51,7 +51,7 @@ async function updateCreatine (req, res) {
 async function deleteCreatine (req, res) {
     try {
         const id = req.params
-        let creatine = await creatine.findByIdAndDelete(id)
+        let creatine = await Creatine.findByIdAndDelete(id)
         if (baseball) {
             return res.status(200).json(creatine)
         }
@@ -62,7 +62,7 @@ async function deleteCreatine (req, res) {
 }
 
 
-module.exports={
+module.exports = {
     getAllCreatine,
     getCreatineById,
     createCreatine,

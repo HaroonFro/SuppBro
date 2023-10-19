@@ -9,7 +9,7 @@ const multi = require('../models/multi')
 
 async function getAllSupps(req,res){
     try{
-        const sports = await supps.find();
+        const supps = await supps.find();
         res.json(supps);
     }catch(error){
         res.status(500).json({error:error.message})
@@ -117,8 +117,6 @@ async function getMultiById (req,res){
         res.status(500).json({error:error.message})
     }
 }
-
-
 
 
 module.exports = {

@@ -1,5 +1,5 @@
 const db = require('../db')
-const { multi } = require('../models')
+const { Multi } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -80,8 +80,8 @@ const main = async () => {
         }
     ]
 
-    const createdMulti = await multi.iinsertMany(multiSupps)
-    console.log('created multi', createdMulti)
+    await Multi.insertMany(multiSupps)
+    console.log('created multi')
 }
 
 const run = async () => {

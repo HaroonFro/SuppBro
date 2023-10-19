@@ -1,5 +1,5 @@
 const db = require('../db')
-const { stim } = require('../models')
+const { Stim } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -9,13 +9,13 @@ const main = async () => {
             brand: 'bucked up',
             product: 'mother bucker',
             caffeine: 300,
-            Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw17b5305e/hi-res/2023_03_09/500836_BuckedUp_MotherBucker_Gym%20Junkie_Front.jpg?sw=480&sh=480&sm=fit&yocs=19_1d_'
+            image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw17b5305e/hi-res/2023_03_09/500836_BuckedUp_MotherBucker_Gym%20Junkie_Front.jpg?sw=480&sh=480&sm=fit&yocs=19_1d_'
         },
         {
             brand: 'bucked up',
             product: 'pre-workout bluraz',
             caffeine: 300,
-            Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwea116c9c/hi-res/500408_1.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+            image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwea116c9c/hi-res/500408_1.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
         },
         {
             brand: 'bucked up',
@@ -27,7 +27,7 @@ const main = async () => {
             brand: 'pro supps',
             product: 'hyde-nightmare blood berry',
             caffeine: 450,
-            Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe3e5b9fb/hi-res/494403_ProSupps%20HYDE%20Nightmare%20Pre-Workout_Blood%20Berry_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+            image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwe3e5b9fb/hi-res/494403_ProSupps%20HYDE%20Nightmare%20Pre-Workout_Blood%20Berry_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
         },
         {
             brand: 'pro supps',
@@ -63,7 +63,7 @@ const main = async () => {
             brand: 'ghost',
             product: 'legend cherry limeade',
             caffeine: 200,
-            Image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwf0d30653/hi-res/528058_GHOST_LEGEND_All_Out_Cherry_Limeade_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
+            image: 'https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.be/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwf0d30653/hi-res/528058_GHOST_LEGEND_All_Out_Cherry_Limeade_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_'
         },
         {
             brand: 'ghost',
@@ -79,8 +79,8 @@ const main = async () => {
         }
     ]
 
-    const createdStim = await stim.insertMany(stimSupps)
-    console.log('created stim', createdStim)
+    await Stim.insertMany(stimSupps)
+    console.log('created stim',)
 }
 
 const run = async () => {
