@@ -96,10 +96,40 @@ async function getCreatineById (req,res){
     }
 }
 
+async function getAllMulti(req,res){
+    try{
+        const multi = await multi.find();
+        res.json(multi);
+    }catch(error){
+        res.status(500).json({error:error.message})
+    }
+}
+
+async function getMultiById (req,res){
+    try{
+        const {id} = req.params;
+        const multi = await multi.findById(id);
+        if(multi){
+            return res.json(multi);
+        }
+        res.status(404).json({message:'Multi not found!'})
+    }catch(error){
+        res.status(500).json({error:error.message})
+    }
+}
+
 
 
 
 module.exports = {
     getAllSupps,
-    getSuppsById
+    getSuppsById,
+    getAllProtein,
+    getProteinById,
+    getAllMulti,
+    getMultiById,
+    getAllCreatine,
+    getCreatineById,
+    getAllStim,
+    getStimById
 }
